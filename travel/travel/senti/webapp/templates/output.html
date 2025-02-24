@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Information</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1E212D;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 10% auto;
+            background-color: #B68973;
+            border-radius: 5px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 40px;
+            color: #381a03;
+            margin-bottom: 10px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            margin-left: 15%;
+        }
+
+        .info-item {
+            margin-bottom: 10px;
+        }
+
+        .info-label {
+            font-weight: bold;
+            font-size: x-large;
+        }
+
+        .info-value {
+            /* font-style: italic; */
+            color: #FAF3E0;
+            font-size: x-large;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>{{ hotel_name }}</h1>
+        <div class="info-item">
+            <span class="info-label">Rating:</span>
+            <span class="info-value">{{ hotel_rating }}</span>
+        </div>
+        <div class="info-item">
+            <span class="info-label">Experience:</span>
+            <span class="info-value">{{ hotel_experience }}</span>
+        </div>
+        <div class="info-item">
+            <span class="info-label">Amenities:</span>
+            <span class="info-value">{{ amenities }}</span>
+        </div>
+        <div class="info-item">
+            <span class="info-label">Address:</span>
+            <span class="info-value">{{ address }}</span>
+        </div>
+        <div class="info-item">
+            <span class="info-label">Country:</span>
+            <span class="info-value">{{ country }}</span>
+        </div>
+        <div class="info-item">
+            <span class="info-label">Price:</span>
+            <span class="info-value">{{ price }}</span>
+        </div>
+        <div class="info-item">
+            <span class="info-label">City:</span>
+            <span class="info-value">{{ city }}</span>
+        </div>
+        <div class="info-item">
+            <span class="info-label">Reviews:</span>
+            <span class="info-value">{{ reviews }}</span>
+        </div>
+        
+    </div>
+</body>
+</html>
